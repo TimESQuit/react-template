@@ -1,0 +1,51 @@
+{
+  "name": "react-template",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "tWatch": "vitest",
+    "tUI": "vitest --ui",
+    "lint": "eslint ./ --cache --fix --ext js,ts,tsx --format=pretty",
+    "format": "prettier --write './**/*.{js,ts,tsx,md,html,css}'",
+    "fixAll": "pnpm run format && pnpm run lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "react-router": "^6.3.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.4.2",
+    "@types/node": "^18.6.5",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@vitejs/plugin-react": "^2.0.0",
+    "@vitest/ui": "^0.21.1",
+    "c8": "^7.12.0",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-typescript-prettier": "^5.0.0",
+    "eslint-formatter-pretty": "^4.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-testing-library": "^5.6.0",
+    "eslint-plugin-vitest-globals": "^1.1.0",
+    "jsdom": "^20.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.5",
+    "vite-plugin-eslint": "^1.7.0",
+    "vitest": "^0.21.1"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
