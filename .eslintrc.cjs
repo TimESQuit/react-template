@@ -15,6 +15,12 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
       },
     },
+    {
+      files: ['./setupTest.ts', './vite.config.ts'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
   ],
   plugins: ['vitest-globals'],
   rules: {
